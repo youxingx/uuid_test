@@ -1,12 +1,12 @@
 package = "uuid_test"
 version = "dev-1"
 source = {
-    url = "git@github.com:youxingx/uuid_test.git"
+    url = "https://github.com/youxingx/uuid_test.git"
 }
 description = {
     summary = "A test lua package with uuid",
     homepage = "https://github.com/youxingx/uuid_test",
-    maintainer = "1097900172@gmail.com",
+    maintainer = "1097900172@qq.com",
     license = "MIT"
 }
 dependencies = {
