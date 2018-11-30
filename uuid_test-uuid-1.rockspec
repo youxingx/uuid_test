@@ -1,7 +1,7 @@
 package = "uuid_test"
 version = "uuid-1"
 source = {
-    url = "git://github.com:youxingx/uuid_test.git"
+    url = "git@github.com:youxingx/uuid_test.git"
 }
 description = {
     summary = "A test lua package with uuid",
