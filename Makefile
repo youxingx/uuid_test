@@ -26,10 +26,10 @@ src/%.o:src/%.c
 	# @echo Compiling $< ...
 	# @$(CC) -c $(CFLAGS)  $< -o src/$*.o
 
-install:src/libuuidx.so
+install:
 	cp src/libuuidx.so /usr/local/openresty/ldlib/libuuidx.so
 
-.PHONY: clean
+.PHONY: clean install
 
 clean:
 	rm -rf *.so src/*.o 
