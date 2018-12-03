@@ -16,7 +16,7 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
-        uuid_test = "src/uuid.c",
-        ["uuid_testxxx"] = "resty/uuid.lua"
+        libuuidx = "src/uuid.c",
+        ["uuid"] = "resty/uuid.lua"
     }
 }
