@@ -22,8 +22,11 @@ all:$(OBJS)
 	# @rm src/*.o -rf
 
 src/%.o:src/%.c
-	# @echo $(shell pwd)/$(lastword $(MAKEFILE_LIST))
-	@echo $(shell dirname $(shell pwd)/$(lastword $(MAKEFILE_LIST)))
+   	# @echo $(INST_PREFIX)
+   	# @echo $(INST_BINDIR)
+   	# @echo $(INST_LIBDIR)
+   	# @echo $(INST_LUADIR)
+   	# @echo $(INST_CONFDIR)
 	$(CC) -c $(CFLAGS)  $< -o src/$*.o
 	# @echo Compiling $< ...
 	# @$(CC) -c $(CFLAGS)  $< -o src/$*.o
@@ -34,4 +37,9 @@ clean:
 	rm -rf *.so src/*.o 
 
 install:
+	@echo INST_PREFIX: $(INST_PREFIX)
+	@echo INST_BINDIR: $(INST_BINDIR)
+	@echo INST_LIBDIR: $(INST_LIBDIR)
+	@echo INST_LUADIR: $(INST_LUADIR)
+	@echo INST_CONFDIR: $(INST_CONFDIR)
 	cp src/libuuidx.so /usr/local/openresty/ldlib/libuuidx.so

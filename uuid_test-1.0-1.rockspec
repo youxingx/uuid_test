@@ -15,9 +15,11 @@ dependencies = {
 }
 build = {
     type = "make",
-    install = {
-        lua = {
-            ["resty.uuid"] = "resty/uuid.lua"
-        }
-    }
+    install_variables = {
+        INST_PREFIX="$(PREFIX)",
+        INST_BINDIR="$(BINDIR)",
+        INST_LIBDIR="$(LIBDIR)",
+        INST_LUADIR="$(LUADIR)",
+        INST_CONFDIR="$(CONFDIR)",
+    },
 }
