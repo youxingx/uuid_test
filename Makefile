@@ -22,6 +22,7 @@ all:$(OBJS)
 	# @rm src/*.o -rf
 
 src/%.o:src/%.c
+	@echo pwd
 	$(CC) -c $(CFLAGS)  $< -o src/$*.o
 	# @echo Compiling $< ...
 	# @$(CC) -c $(CFLAGS)  $< -o src/$*.o
