@@ -22,7 +22,8 @@ all:$(OBJS)
 	# @rm src/*.o -rf
 
 src/%.o:src/%.c
-	@echo pwd
+	# @echo $(shell pwd)/$(lastword $(MAKEFILE_LIST))
+	@echo $(shell dirname $(shell pwd)/$(lastword $(MAKEFILE_LIST)))
 	$(CC) -c $(CFLAGS)  $< -o src/$*.o
 	# @echo Compiling $< ...
 	# @$(CC) -c $(CFLAGS)  $< -o src/$*.o
