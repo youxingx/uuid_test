@@ -1,4 +1,4 @@
-package = "uuid_test"
+package = "uuid_test4"
 version = "1.0-1"
 source = {
     url = "git://github.com/youxingx/uuid_test.git",

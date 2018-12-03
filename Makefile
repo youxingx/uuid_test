@@ -32,10 +32,10 @@ clean:
 	rm -rf *.so src/*.o 
 
 install:
-	@echo INST_PREFIX: $(INST_PREFIX)
-	@echo INST_BINDIR: $(INST_BINDIR)
-	@echo INST_LIBDIR: $(INST_LIBDIR)
-	@echo INST_LUADIR: $(INST_LUADIR)
-	@echo INST_CONFDIR: $(INST_CONFDIR)
+	# @echo INST_PREFIX: $(INST_PREFIX)
+	# @echo INST_BINDIR: $(INST_BINDIR)
+	# @echo INST_LIBDIR: $(INST_LIBDIR)
+	# @echo INST_LUADIR: $(INST_LUADIR)
+	# @echo INST_CONFDIR: $(INST_CONFDIR)
 	cp src/libuuidx.so $(INST_LIBDIR)
-	cp resty/uuid.lua $(INST_LUADIR)
+	cp -r resty $(INST_LUADIR)
