@@ -14,9 +14,4 @@ dependencies = {
     "lua >= 5.1, < 5.4"
 }
 build = {
-    type = "builtin",
-    modules = {
-        libuuidx = "src/uuid.c",
-        ["uuid"] = "resty/uuid.lua"
-    }
-}
+    type = "make"
