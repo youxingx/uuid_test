@@ -14,10 +14,5 @@ dependencies = {
     "lua >= 5.1, < 5.4"
 }
 build = {
-    type = "make",
-    install = {
-         lua = {
-            ["resty.uuid"] = "resty/uuid.lua"
-         }
-    }
+    type = "make"
 }
