@@ -15,7 +15,9 @@ dependencies = {
 }
 build = {
     type = "make",
-    lua = {
-        ["resty.uuid"] = "resty/uuid.lua"
+    install = {
+        lua = {
+            ["resty.uuid"] = "resty/uuid.lua"
+        }
     }
 }
