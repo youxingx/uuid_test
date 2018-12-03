@@ -27,6 +27,7 @@ src/%.o:src/%.c
    	# @echo $(INST_LIBDIR)
    	# @echo $(INST_LUADIR)
    	# @echo $(INST_CONFDIR)
+	@echo "start make..."
 	$(CC) -c $(CFLAGS)  $< -o src/$*.o
 	# @echo Compiling $< ...
 	# @$(CC) -c $(CFLAGS)  $< -o src/$*.o
@@ -37,6 +38,7 @@ clean:
 	rm -rf *.so src/*.o 
 
 install:
+	@echo "???"
 	@echo INST_PREFIX: $(INST_PREFIX)
 	@echo INST_BINDIR: $(INST_BINDIR)
 	@echo INST_LIBDIR: $(INST_LIBDIR)
